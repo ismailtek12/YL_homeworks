@@ -1,6 +1,6 @@
 # DQN Tabanlı Basit Depo Robotu Simülasyonu
 
-## 📌 Projenin Amacı
+##  Projenin Amacı
 
 Bu proje, basit bir ızgara tabanlı depo ortamında çalışan bir robotun, takviyeli öğrenme (Reinforcement Learning) yöntemi olan **Deep Q-Learning (DQN)** kullanılarak görevleri öğrenmesini ve gerçekleştirmesini amaçlamaktadır. Robotun temel görevleri şunlardır:
 
@@ -10,7 +10,7 @@ Bu proje, basit bir ızgara tabanlı depo ortamında çalışan bir robotun, tak
 
 ---
 
-## 🌐 Ortam Tanımı: `SimpleWarehouseEnv`
+##  Ortam Tanımı: `SimpleWarehouseEnv`
 
 Özel olarak tanımlanmış `SimpleWarehouseEnv` sınıfı, `gym.Env` sınıfından türetilmiştir.
 
@@ -25,7 +25,7 @@ Bu proje, basit bir ızgara tabanlı depo ortamında çalışan bir robotun, tak
 
 ---
 
-## 🎮 Aksiyon Uzayı
+##  Aksiyon Uzayı
 
 | Aksiyon Kodu | Açıklama      |
 |--------------|---------------|
@@ -39,7 +39,7 @@ Bu proje, basit bir ızgara tabanlı depo ortamında çalışan bir robotun, tak
 
 ---
 
-## ⚙️ Ortamın Dinamikleri: `step()` Fonksiyonu
+##  Ortamın Dinamikleri: `step()` Fonksiyonu
 
 - Hareket aksiyonları bataryadan **1 birim enerji** tüketir.
 - Engellerden geçiş engellenir ve **ceza puanı** verilir.
@@ -50,7 +50,7 @@ Bu proje, basit bir ızgara tabanlı depo ortamında çalışan bir robotun, tak
 
 ---
 
-## 🎯 Ödül Yapısı
+##  Ödül Yapısı
 
 | Durum                                | Ödül       |
 |--------------------------------------|------------|
@@ -65,7 +65,7 @@ Bu proje, basit bir ızgara tabanlı depo ortamında çalışan bir robotun, tak
 
 ---
 
-## 🧠 DQN Modeli
+##  DQN Modeli
 
 - **Giriş vektörü**: 7 boyutlu durum vektörü
 - **Çıkış vektörü**: 7 boyutlu aksiyon uzayı
@@ -77,7 +77,7 @@ Giriş (7) → Dense(128) + ReLU → Dense(64) + ReLU → Çıkış (7)
 
 ----
 
-## 🔁 Modelin Karar Süreci
+##  Modelin Karar Süreci
 
 1. Güncel durum vektörü modele verilir.
 2. Model, her aksiyon için bir Q-değeri üretir.
